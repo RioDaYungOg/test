@@ -1,0 +1,30 @@
+{%extends 'main.html'%}
+
+{%block content%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello, you are on the {{page}} page</p>
+
+    {%if number > 10%}
+    <p>Number is greater than ten</p>
+
+    {%elif number == 10%}
+    <p>Number is equals to ten</p>
+    
+    {%else%}
+    <p>Number is less than ten</p>
+
+    {% endif %}
+
+    <hr>
+    <h1>Projects</h1>
+</body>
+{%endblock content%}
+</html>
